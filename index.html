@@ -1,11 +1,27 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <style>
+      .hero {
+        height: 100vh;
+      }
+      .hero .background-image {
+         object-fit: cover;
+        
+      }
+      .hero .album {
+        object-fit: contain;
+      }
+    </style>
   </head>
   <body>
-     <div>
-          <img src="/cover.jpg" />
-          <h1>Hello World</h1>
+     <div class="hero">
+          <img class="background-image" src="https://raw.githubusercontent.com/tomatrow/jake-site/master/cover.jpg" />
+          <img class="album" src="https://raw.githubusercontent.com/tomatrow/jake-site/master/cover.jpg" />
+          <div>
+              <h1>Outworld</h1>
+              <span>9/25/22</span>
+          </div>
      </div>
 
   </body>
