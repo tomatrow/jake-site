@@ -1,6 +1,5 @@
 <html>
   <head>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css"> -->
     <style>
     body {
         max-width: unset;
@@ -28,7 +27,7 @@
       
       
       
-      .hero img, .text-container {
+      .hero img, .text-container, .footer {
           position: absolute;
       }
       
@@ -64,40 +63,56 @@
       }
       
       
-      footer {
-          margin-top: 100px;
-          margin-bottom: 100px;
+      .footer {
+          margin-top: 25px;
+          margin-bottom: 25px;
+          
+          left: 0;
+          bottom: 67px;
+          width: 100%;
           
           display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-            
+          justify-content: space-around;
+          align-items: center;
       }
       
-      footer img {
-            height: 2rem;
+      .footer img {
+            height: 3rem;
+      }
+      
+      @media screen and (max-width: 615px) {
+          .title {
+              font-size: 8vw;
+          }
+          
       }
     </style>
   </head>
   <body>
      <div class="hero">
-          <img class="background-image" src="https://raw.githubusercontent.com/tomatrow/jake-site/master/cover.jpg" />
+          <img class="background-image" src="assets/cover.jpg" />
           <div class="info">
-              <img class="album" src="https://raw.githubusercontent.com/tomatrow/jake-site/master/cover.jpg" />
+              <img class="album" src="assets/cover.jpg" />
               <div class="text-container">
                   <h1 class="title">Outworld</h1>
                   <span class="message">9/25/22</span>
               </div>
           </div>
+          <div class="footer">
+                <a target="_blank" href="https://open.spotify.com/artist/6TSLU6RCFiLnRKXCBn0Sbo">
+                    <img src="assets/spotify.png" alt="Spotify">
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCb854cgygVAg8MnBxIoYqcA">
+                    <img src="assets/youtube.png" alt="Youtube">
+                </a>
+                <a target="_blank" href="https://music.apple.com/us/artist/sly-disciple/958399218">
+                    <img src="assets/apple.png" alt="Apple Music">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/sly.disciple/">
+                    <img src="assets/ig.png" alt="Instagram">
+                </a>
+         </div>
      </div>
-     <footer>
-        <a target="_blank" href="https://open.spotify.com/artist/6TSLU6RCFiLnRKXCBn0Sbo">Spotify</a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCb854cgygVAg8MnBxIoYqcA">
-            <img src="https://github.com/tomatrow/jake-site/blob/master/youtube.png?raw=true" alt="Youtube">
-        </a>
-        <a target="_blank" href="https://music.apple.com/us/artist/sly-disciple/958399218">Apple Music</a>
-        <a target="_blank" href="https://www.instagram.com/sly.disciple/">Instagram</a>
-     </footer>
+     
   </body>
 </html>
