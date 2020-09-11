@@ -1,28 +1,92 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css"> -->
     <style>
+    body {
+        max-width: unset;
+        margin: unset;
+        padding: unset;
+        background-color: #487ab4;
+        color: white;
+    }
       .hero {
         height: 100vh;
+        position: relative;
+        width: 100%;
       }
       .hero .background-image {
-         object-fit: cover;
-        
+        object-fit: cover;
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
       }
       .hero .album {
         object-fit: contain;
+        height: 400px;
+        margin: auto;
+      }
+      
+      
+      
+      .hero img, .text-container {
+          position: absolute;
+      }
+      
+      .text-container {
+          color: white;
+          text-transform: uppercase; 
+      }
+      
+      
+      
+      .hero .info {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .title {
+          font-size: 70px;
+          letter-spacing: 20px;
+      }
+      .message {
+          font-size: 25px;
+          display: block;
+          text-align: center;
+          letter-spacing: 5px;
+      }
+      
+      a {
+          text-decoration: none;
+          color: white;
+      }
+      
+      
+      footer {
+          text-align: center;
+          margin-top: 100px;
+          margin-bottom: 100px;
       }
     </style>
   </head>
   <body>
      <div class="hero">
           <img class="background-image" src="https://raw.githubusercontent.com/tomatrow/jake-site/master/cover.jpg" />
-          <img class="album" src="https://raw.githubusercontent.com/tomatrow/jake-site/master/cover.jpg" />
-          <div>
-              <h1>Outworld</h1>
-              <span>9/25/22</span>
+          <div class="info">
+              <img class="album" src="https://raw.githubusercontent.com/tomatrow/jake-site/master/cover.jpg" />
+              <div class="text-container">
+                  <h1 class="title">Outworld</h1>
+                  <span class="message">9/25/22</span>
+              </div>
           </div>
      </div>
-
+     <footer>
+        <a target="_blank" href="https://open.spotify.com/artist/6TSLU6RCFiLnRKXCBn0Sbo">Spotify</a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCb854cgygVAg8MnBxIoYqcA">Youtube</a>
+        <a target="_blank" href="https://music.apple.com/us/artist/sly-disciple/958399218">Apple Music</a>
+        <a target="_blank" href="https://www.instagram.com/sly.disciple/">Instagram</a>
+     </footer>
   </body>
 </html>
